@@ -1,0 +1,53 @@
+@use "../../assets/scss/mixin" as *;
+@use "../../assets/scss/variables" as *;
+@use "../../assets/scss/font" as *;
+
+#intro {
+  @include flex-layout(column, space-around);
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  .title {
+    @include flex-layout(column, center, center, 1.5rem);
+    text-align: center;
+    h1 {
+      @include font-h1;
+    }
+  }
+  .bottom {
+    @include flex-layout(column, center, center, 0.5rem);
+    p {
+      color: rgba(255, 255, 255, 0.6);
+      @include font-cap;
+    }
+    .down-icon {
+      color: rgba(255, 255, 255, 0.6);
+      width: 24px;
+      height: 24px;
+      animation: float 1.5s ease-in-out infinite;
+    }
+  }
+  @include tablet {
+    .title {
+      h1 {
+        font-size: 120px;
+      }
+      p {
+        @include font-h3;
+      }
+    }
+  }
+}
+
+// 애니메이션
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px); // 위로 5px 이동
+  }
+  100% {
+    transform: translateY(0); // 원위치
+  }
+}

@@ -1,0 +1,46 @@
+@use "../../assets/scss/mixin" as *;
+@use "../../assets/scss/variables" as *;
+@use "../../assets/scss/font" as *;
+
+#skills {
+  padding-top: 1.5rem;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  .skills-zip {
+    width: 100%;
+    @include flex-layout(column, center, center, 1.5rem);
+    h3 {
+      @include font-h3;
+    }
+    .skills-card {
+      padding: 1.5rem;
+      width: 100%;
+      ul {
+        @include flex-layout(column, center, flex-start, 1rem);
+        .skills-item {
+          @include flex-layout(column, center, flex-start, 1rem);
+          width: 100%;
+          padding: 1rem;
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 16px;
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          .skill-icon {
+            width: 36;
+            height: 36px;
+          }
+          .skill-category {
+            @include font-h4;
+          }
+          .skill-tags {
+            li {
+              list-style: disc;
+              margin-left: 1.5rem;
+            }
+            @include flex-layout(column, center, flex-start, 1rem);
+          }
+        }
+      }
+    }
+  }
+}

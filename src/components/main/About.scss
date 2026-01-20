@@ -1,0 +1,64 @@
+@use "../../assets/scss/mixin" as *;
+@use "../../assets/scss/variables" as *;
+@use "../../assets/scss/font" as *;
+
+#about {
+  @include flex-layout(column);
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  .bg-img {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 50%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+    .bg-color {
+      background: var(--color-main);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .txt {
+    padding: 1.5rem;
+    .about-top {
+      @include flex-layout(column, center, flex-start, 0.5rem);
+      @include font-m;
+      padding-bottom: 1.5rem;
+    }
+    .about-mid {
+      @include flex-layout(column, center, flex-start, 1.5rem);
+      span {
+        color: var(--color-main-pink);
+        @include font-BL;
+        font-weight: 500;
+      }
+      padding-bottom: 3rem;
+    }
+  }
+  .bottom {
+    ul {
+      @include flex-layout(row, flex-start);
+      flex-wrap: wrap;
+      li {
+        padding: 0.5rem 1.5rem;
+        border-radius: 24px;
+        border: 1px solid #fff;
+        background: var(--color-main);
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "type": "Team",
+    "proname": "주차장 관리 웹 사이트",
+    "prosub": "입주민·사업자·관리자 역할별 실시간 주차장 관리 시스템",
+    "day": "2025.01.02 ~ 2025.01.13",
+    "skill-1": "React",
+    "skill-2": "JavaScript(ES6+)",
+    "skill-3": "SCSS",
+    "skill-4": "Supabase",
+    "skill-5": "Git/GitHub"
+  },
+  {
+    "id": "2",
+    "type": "Team",
+    "proname": "쇼핑몰 프론트엔드 웹 앱",
+    "prosub": "상품 탐색과 데이터 기반 UI를 갖춘 러닝 액티브웨어 쇼핑몰 SPA",
+    "day": "2025.12.19 ~ 2025.12.29",
+    "skill-1": "React",
+    "skill-2": "JavaScript(ES6+)",
+    "skill-3": "SCSS",
+    "skill-4": "Mock JSON",
+    "skill-5": "Git/GitHub"
+  },
+  {
+    "id": "3",
+    "type": "Clone",
+    "proname": "ConnectWave 공식 웹사이트를 클론 구현한 React 프로젝트",
+    "prosub": "스크롤 기반 콘텐츠 전환으로 몰입도를 구현한 ConnectWave 클론 웹 앱",
+    "day": "2025.12.08 ~ 2025.12.11",
+    "skill-1": "React",
+    "skill-2": "CSS3",
+    "skill-3": "GSAP"
+  },
+  {
+    "id": "4",
+    "type": "Clone",
+    "proname": "My Widget",
+    "prosub": "OpenAPI 기반 날씨 정보와 JSON/로컬 저장소를 활용한 개인화 위젯을 구성한 대시보드 웹 애플리케이션",
+    "day": "2025.12.01 ~ 2025.12.04",
+    "skill-1": "React",
+    "skill-2": "Axios",
+    "skill-3": "Mock JSON",
+    "skill-4": "CSS3"
+  }
+]
