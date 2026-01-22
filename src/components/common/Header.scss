@@ -9,11 +9,11 @@ header {
   width: 100%;
   .header-desktop {
     display: none;
-    @include tablet {
+    @include desktop {
       display: block;
     }
     ul {
-      @include font-h4();
+      @include font-BL();
       @include flex-layout();
       li {
         @include flex-layout();
@@ -24,6 +24,10 @@ header {
         color: var(--color-font-sub);
         &:hover {
           color: var(--color-white);
+        }
+        &.active {
+          color: var(--color-white);
+          font-weight: 600;
         }
       }
     }

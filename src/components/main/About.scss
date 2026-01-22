@@ -3,6 +3,19 @@
 @use "../../assets/scss/font" as *;
 
 #about {
+  margin: 0 auto;
+  .pc-bg {
+    @include desktop {
+      padding: 3rem;
+      @include flex-layout(row, space-between, center, 3rem);
+      .pc-line {
+        width: 1px;
+        height: 400px;
+        background: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+
   @include flex-layout(column);
   position: relative;
   width: 100%;
@@ -31,9 +44,19 @@
       width: 100%;
       height: 100%;
     }
+    @include desktop {
+      max-width: 500px;
+      position: relative;
+      z-index: 0;
+      opacity: 1;
+      margin: 0 auto;
+    }
   }
   .txt {
     padding: 1.5rem;
+    @include desktop {
+      padding: 0;
+    }
     .about-top {
       @include flex-layout(column, center, flex-start, 0.5rem);
       @include font-m;

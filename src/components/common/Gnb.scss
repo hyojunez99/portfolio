@@ -2,10 +2,10 @@
 @use "../../assets/scss/variables" as *;
 
 nav {
-  @include tablet {
+  position: relative;
+  @include desktop {
     display: none;
   }
-  position: relative;
   .mobile-toggle {
     @include flex-layout(row, flex-end);
     padding: 1rem;
@@ -76,6 +76,10 @@ nav {
         &:hover {
           color: var(--color-white);
           background-color: var(--color-bg);
+        }
+        &.active {
+          font-weight: 500;
+          color: var(--color-white);
         }
       }
     }

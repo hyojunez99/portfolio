@@ -1,31 +1,28 @@
 .wrapper {
   position: relative;
-  z-index: 1; // 🔥 중요
+  z-index: 1;
   width: 100%;
   margin: 0 auto;
   .content {
     position: relative;
-    z-index: 2; // 안전하게 한 단계 위
+    z-index: 2;
     min-height: 100vh;
   }
+
   /* 배경 영상 */
   .video-bg {
     position: fixed;
     inset: 0;
     z-index: 0;
-
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-
     video {
       position: absolute;
       top: 50%;
       left: 50%;
-
       min-width: 100%;
       min-height: 100%;
-
       transform: translate(-50%, -50%);
       object-fit: cover;
     }

@@ -3,38 +3,32 @@
 @use "../../assets/scss/font" as *;
 
 #intro {
-  @include flex-layout(column, space-around);
+  @include flex-layout(column, center);
   width: 100%;
   height: auto;
   min-height: 100vh;
   .title {
+    height: 100%;
     @include flex-layout(column, center, center, 1.5rem);
     text-align: center;
     h1 {
-      @include font-h1;
+      // @include font-h1;
+      font-size: clamp(3rem, 6vw + 1rem, 7.5rem);
+      line-height: 1.2;
+      word-break: keep-all;
     }
   }
   .bottom {
+    padding-top: 5rem;
     @include flex-layout(column, center, center, 0.5rem);
     p {
       color: rgba(255, 255, 255, 0.6);
-      @include font-cap;
     }
     .down-icon {
       color: rgba(255, 255, 255, 0.6);
       width: 24px;
       height: 24px;
       animation: float 1.5s ease-in-out infinite;
-    }
-  }
-  @include tablet {
-    .title {
-      h1 {
-        font-size: 120px;
-      }
-      p {
-        @include font-h3;
-      }
     }
   }
 }

@@ -30,6 +30,13 @@
   line-height: 140%;
 }
 
+@mixin font-m {
+  font-family: "Pretendard", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 140%;
+}
+
 @mixin font-BL {
   font-family: "Pretendard", sans-serif;
   font-size: 1.125rem;
@@ -47,20 +54,13 @@
 @mixin font-cap {
   font-family: "Pretendard", sans-serif;
   font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 140%;
-}
-
-@mixin font-m {
-  font-family: "Pretendard", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 140%;
 }
 
 @mixin font-small {
   font-family: "Pretendard", sans-serif;
   font-size: 0.75rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 140%;
 }
