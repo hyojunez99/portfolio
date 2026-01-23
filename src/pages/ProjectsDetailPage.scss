@@ -5,7 +5,7 @@
 #projectsdetail {
   max-height: 100vh;
   height: auto;
-  overflow-y: auto;
+  overflow-y: hidden;
   padding: 24px;
   @include desktop {
   }
