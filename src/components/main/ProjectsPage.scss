@@ -6,6 +6,9 @@
   height: auto;
   min-height: 100vh;
   margin: 0 auto;
+  @include desktop {
+    padding: 3rem;
+  }
   .pro-title {
     text-align: center;
     padding: 1.5rem;

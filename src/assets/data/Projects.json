@@ -99,25 +99,36 @@
     "skills": ["HTML5", "CSS3"]
   },
   {
-    "id": "9",
-    "image": "card-img9.png",
+    "id": "10",
+    "image": "",
     "image2": "card-img9-1.png",
-    "type": "Personal",
-    "type2": "개인 프로젝트",
-    "proname": "ClearDrive ",
-    "prosub": "정보 구조와 가독성을 고려한 기업형 웹사이트 클론",
-    "day": "2025.10.24 ~ 2025.10.26",
-    "skills": ["HTML5", "CSS3"]
+    "type": "Practical",
+    "type2": "",
+    "proname": "끊김 없이 무한으로 돌아가는 이미지 슬라이더",
+    "prosub": "",
+    "day": "",
+    "skills": ""
   },
   {
-    "id": "10",
-    "image": "card-img9.png",
+    "id": "11",
+    "image": "",
     "image2": "card-img9-1.png",
     "type": "Practical ",
-    "type2": "개인 프로젝트",
-    "proname": "ClearDrive ",
-    "prosub": "정보 구조와 가독성을 고려한 기업형 웹사이트 클론",
-    "day": "2025.10.24 ~ 2025.10.26",
-    "skills": ["HTML5", "CSS3"]
+    "type2": "",
+    "proname": "CSS 에니메이션을 활용한 프로그래스바 구현",
+    "prosub": "",
+    "day": "",
+    "skills": ""
+  },
+  {
+    "id": "12",
+    "image": "",
+    "image2": "card-img9-1.png",
+    "type": "Practical ",
+    "type2": "",
+    "proname": "CSS 3D  입체 서적 구현",
+    "prosub": "",
+    "day": "",
+    "skills": ""
   }
 ]
